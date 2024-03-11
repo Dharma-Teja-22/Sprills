@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprills using HTML & CSS</title>
+    <style>
+        .title{
+            text-align: center;
+            justify-content: center;
+            color:white;
+            margin: none;
+            margin-bottom: 100px;
+            position: absolute;
+            top: 40px;
+            font-weight: bolder;
+            letter-spacing: 2.4px;
+            font-size: 40px;
+            text-shadow: 4px 5px 10px gainsboro;
+            text-decoration: underline;
+        }
+        .title:hover{
+            color: rgba(255, 255, 255, 0.571);
+            text-shadow: none;
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95rem;
+            height: 720px;
+            background-color: black;
+        }
+
+        .main{
+            margin: none;
+            margin-top: 320px;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(45deg);
+        }
+
+        span{
+            position: absolute;
+            border-radius: 50%;
+            animation: animate 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animate{
+            0% {
+                transform: translateZ(0px);
+            }
+
+            50% {
+                transform: translateZ(310px);
+            }
+
+            100% {
+                transform: translateZ(0px);
+            }
+        }
+
+        span:nth-child(1){
+            top: 3px;
+            bottom: 3px;
+            left: 3px;
+            right: 3px;
+            animation-delay: 0.1s;
+            border: 3px red solid;
+        }
+
+        span:nth-child(2) {
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            animation-delay: 0.3s;
+            border: 3px orange solid;
+        }
+
+        span:nth-child(3) {
+            top: 25px;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            animation-delay: 0.5s;
+            border: 3px yellow solid;
+        }
+
+        span:nth-child(4) {
+            top: 35px;
+            bottom: 35px;
+            left: 35px;
+            right: 35px;
+            animation-delay: 0.7s;
+            border: 3px green solid;
+        }
+
+        span:nth-child(5) {
+            top: 45px;
+            bottom: 45px;
+            left: 45px;
+            right: 45px;
+            animation-delay: 0.9s;
+            border: 3px blue solid;
+        }
+
+        span:nth-child(6) {
+            top: 55px;
+            bottom: 55px;
+            left: 55px;
+            right: 55px;
+            animation-delay: 1.1s;
+            border: 3px indigo solid;
+        }
+
+        span:nth-child(7) {
+            top: 65px;
+            bottom: 65px;
+            left: 65px;
+            right: 65px;
+            animation-delay: 1.3s;
+            border: 3px violet solid;
+        }
+
+        span:nth-child(8) {
+            top: 75px;
+            bottom: 75px;
+            left: 75px;
+            right: 75px;
+            animation-delay: 1.5s;
+            border: 3px red solid;
+        }
+        span:nth-child(9) {
+            top: 85px;
+            bottom: 85px;
+            left: 85px;
+            right: 85px;
+            animation-delay: 1.7s;
+            border: 3px aqua solid;
+        }
+        span:nth-child(10) {
+            top: 95px;
+            bottom: 95px;
+            left: 95px;
+            right: 95px;
+            animation-delay: 1.9s;
+            border: 3px purple solid;
+        }
+        span:nth-child(11) {
+            top: 105px;
+            bottom: 105px;
+            left: 105px;
+            right: 105px;
+            animation-delay: 2.1s;
+            border: 3px pink solid;
+        }
+        span:nth-child(12) {
+            top: 115px;
+            bottom: 115px;
+            left: 115px;
+            right: 115px;
+            animation-delay: 2.3s;
+            border: 3px rgb(255, 238, 0) solid;
+        }
+        span:nth-child(13) {
+            top: 125px;
+            bottom: 125px;
+            left: 125px;
+            right: 125px;
+            animation-delay: 2.5s;
+            border: 3px rgb(202, 42, 42) solid;
+        }
+        span:nth-child(14) {
+            top: 140px;
+            bottom: 140px;
+            left: 140px;
+            right: 140px;
+            animation-delay: 2.7s;
+            border: 3px rgb(0, 255, 17) solid;
+        }
+        span:nth-child(15) {
+            top: 160px;
+            bottom: 160px;
+            left: 160px;
+            right: 160px;
+            background-color: aqua;
+            color: black;
+            animation-delay: 2.9s;
+            border: 3px rgb(75, 61, 61) solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">SPRILLS</div>
+    <div class="main">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span style="font-size: larger; text-align: center; color: black; border: none; display: flex; justify-content: center; align-items: center;">Dharma Teja ★</span>
+    </div>
+
+</body>
+
+</html>
